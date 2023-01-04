@@ -195,7 +195,7 @@ if [ ! -z "$TS_REMOTE_VER" ] && [ "$TS_LOCAL_VER" != "$TS_REMOTE_VER" ]; then
     if [ $? -eq 0 ]; then
         chmod a+x /tmp/ts/TorrServer
         TS_NEW_VER=$(/tmp/ts/TorrServer --version | cut -d ' ' -f 2)
-        if [ $? -eq 0 ] && [ ! -z "$TS_NEW_VER" ] && [ "$TS_NEW_VER" == "$TS_REMOTE_VER" ]; then
+        if [ $? -eq 0 ] && [ ! -z "$TS_NEW_VER" ] && [ "$TS_NEW_VER" == "${TS_REMOTE_VER//_/.}" ]; then
             cp -f /tmp/ts/TorrServer /TS/TorrServer
             chmod a+x /TS/TorrServer
             TS_LOCAL_VER=$(/TS/TorrServer --version | cut -d ' ' -f 2)
