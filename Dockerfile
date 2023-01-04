@@ -4,8 +4,10 @@
 
 FROM ubuntu:latest
 
-ENV TS_GIT_URL="https://api.github.com/repos/YouROK/TorrServer/releases"
-ENV TS_HOME_URL="https://releases.yourok.ru/torr/server_release.json"
+# ENV TS_GIT_URL="https://api.github.com/repos/YouROK/TorrServer/releases"
+ENV TS_GIT_URL="https://api.github.com/repos/trinity-aml/TorrServer/releases"
+# ENV TS_HOME_URL="https://releases.yourok.ru/torr/server_release.json"
+ENV TS_HOME_URL=""
 ENV TS_RELEASE="latest"
 ENV TS_PORT=8090
 ENV TS_CONF_PATH=/TS/db
