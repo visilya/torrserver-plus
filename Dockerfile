@@ -2,7 +2,7 @@
 # TorrServer with qBittorrent
 #
 
-FROM ubuntu:latest
+FROM ubuntu:jammy
 
 # ENV TS_GIT_URL="https://api.github.com/repos/YouROK/TorrServer/releases"
 ENV TS_GIT_URL="https://api.github.com/repos/trinity-aml/TorrServer/releases"
